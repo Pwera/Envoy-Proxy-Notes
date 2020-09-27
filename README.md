@@ -2,14 +2,14 @@
 
 # Envoy Architecture:
 - Downstream/Upstream
-![Downstream/Upstream](/img/envoy0.png)
+![Downstream/Upstream](/img/envoy0.PNG)
   * Anything in front of Envoy is Downstream
   * Anything in back of Envoy is Upstream
   * Communication between Downstream & Upstream is done through 'Side Car'
   * Requests come from Downstream
   * Responses come from Upstream
 - Clusters
-![Clusters](/img/envoy1.png)
+![Clusters](/img/envoy1.PNG)
   * Group of hosts/endpoints are called a cluster
   * Cluster has a load balancing policy
 - Listeners
@@ -23,7 +23,7 @@
   * Each thread is bound to a single connection
   * No coordination between threads
 - Connection Pools
-![Connection Pools](/img/envoy2.png)
+![Connection Pools](/img/envoy2.PNG)
   * Each host in a cluster gets 1 or more connection pools
   * Each protocol get a pool HTTP 1.1, HTTP/2
   * More pools allocated per Priority or socket options ( There are default and high priority pools)
